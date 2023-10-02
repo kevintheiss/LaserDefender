@@ -193,9 +193,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.37069938, y: 1.9381797}
+  m_Offset: {x: -0.00092607737, y: 0.0190987}
   serializedVersion: 2
-  m_Radius: 0.31921324
+  m_Radius: 0.44559234
 --- !u!114 &-7162131673699104040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,8 +208,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39cbd79216feb65428cb660ce8285707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
+  isPlayer: 0
+  health: 30
+  score: 35
   hitEffect: {fileID: 1457437518330621457, guid: 8e57236ce1dccca4f8ca8e06ca2c9efa, type: 3}
+  applyCameraShake: 0
 --- !u!114 &-2444079405547177168
 MonoBehaviour:
   m_ObjectHideFlags: 0
