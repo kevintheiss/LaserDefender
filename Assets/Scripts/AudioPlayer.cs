@@ -14,6 +14,27 @@ public class AudioPlayer : MonoBehaviour
 
     Vector3 cameraPos;
 
+    static AudioPlayer instance;
+
+    void Awake()
+    {
+        ManageSingleton();
+    }
+
+    void ManageSingleton()
+    {
+        if(instance != null)
+        {
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+
     public void PlayShootingClip()
     {
         PlayClip(shootingClip, shootingVolume);
